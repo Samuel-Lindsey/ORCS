@@ -1,0 +1,202 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+}
+
+.mLogo {
+	display: none;
+}
+
+
+.headLogo {
+  display: inline-flex;
+  display: none;
+}
+
+
+
+ul .menu {
+  margin: 0, 0;
+}
+
+nav ul li a:visited {
+  color: #595959;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+
+header {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+	background-color: white;
+	margin-bottom: 5px;
+	position: sticky;
+	top: 0;
+}
+
+header .menu {
+  display: inline-flex;
+  margin: 0;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.name {
+  margin:5px 5px;
+  color: #910d0d;
+  font-size: 3em;
+  font-family: 'IM Fell English', serif;
+
+}
+
+.span1{
+  display: block;
+  align: center;
+  height: 50%;
+}
+
+.span1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 50%;
+  height: 50%;
+}
+
+
+
+.col {
+  margin: 5px 10px;
+}
+
+.main-stage {
+  display: flex;
+  align-items: flex-end;
+}
+
+nav {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/***Menu Button - Nav ***/
+
+ul li {
+margin-right: 5px;
+
+}
+
+ul a {
+
+  padding: 20px;
+  padding-right: 0 !important; /* important overrides media queries */
+  font-size: 1.45em;
+  font-weight: bold;
+
+  color: #595959;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul a:hover {
+  background: #171717;
+}
+
+nav {
+	width: 79%;
+}
+
+nav li {
+  float: left;
+  width: 20%;
+  border-right: 1px solid #black;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+@media only screen and (max-width: 595px) {
+
+.mLogo {
+	display: block;
+}
+
+.logo {
+	display: none;
+	width: 80%;
+
+}
+
+.span1{
+  display: block;
+  align: center;
+  height: 50%;
+	margin: 0 15px;
+}
+
+.name {
+	display: none;
+}
+
+  .hamburger {
+    padding: 15px;
+    display: block;
+  }
+
+	.hamburger a {
+		align: right;
+	}
+
+  .line {
+    border-bottom: 4px solid black;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+	nav {
+		align-items: right;
+	}
+
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+
+  .slide-down {
+    height: 275px;
+  }
+
+	.col {
+	  margin: 5px 10px;
+	}
+
+	.main-stage {
+	  display: block;
+	}
