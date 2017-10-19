@@ -18,15 +18,21 @@ body {
   display: none;
 }
 
+.selected a {
+	color: #910d0d;
+}
+
 
 
 ul .menu {
   margin: 0, 0;
 }
 
+/***** do not use now
 nav ul li a:visited {
   color: #595959;
 }
+**********************/
 
 a {
   text-decoration: none;
@@ -55,6 +61,7 @@ header .menu {
   width: 100%;
   flex-wrap: wrap;
 }
+
 .name {
   margin:5px 5px;
   color: #910d0d;
@@ -96,6 +103,7 @@ nav {
 
 footer {
 	background-color: white;
+	height: 20px;
 	position: sticky;
 	bottom: 0;
 }
@@ -139,10 +147,10 @@ nav li:last-child {
   border-right: none;
 }
 
-
-
 /***Gallery Page ***/
-
+.galleryTitle {
+	text-align: center;
+}
 #imageGallery li {
 	display: inline-block;
 }
@@ -199,12 +207,8 @@ nav li:last-child {
   .hamburger {
     padding: 15px 0 0 15px;
     display: block;
-		float: right;
+		float: left;
   }
-
-	.hamburger a {
-		align: right;
-	}
 
   .line {
     border-bottom: 4px solid black;
@@ -240,4 +244,24 @@ nav li:last-child {
 
 	.main-stage {
 	  display: block;
+
+	}
+
+	/***Gallery Page ***/
+
+	#imageGallery li {
+		display: block;
+		margin-left: 0px;
+	}
+
+	#imageGallery {
+		padding-left: 0px;
+	}
+
+	#imageGallery li a img {
+		display: block;
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		margin: 20px auto;
 	}
