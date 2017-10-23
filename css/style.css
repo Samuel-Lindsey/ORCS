@@ -152,7 +152,8 @@ nav li:last-child {
 	text-align: center;
 }
 #imageGallery li {
-	display: inline-block;
+	display: inline-flex;
+
 }
 /** lightbox code **/
 
@@ -164,12 +165,21 @@ nav li:last-child {
 	top: 0;
 	left: 0;
 	display: none;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
+	margin-bottom: 0px;
+	margin-right: 0px;
 }
 
 #overlay img {
+	display: flex;
 	margin-top: 10%;
-}
+	max-height: 80%;
+	max-width: 80%;
+	}
+
 
 #overlay p {
 	color: white;
@@ -253,6 +263,7 @@ nav li:last-child {
 		display: block;
 		margin-left: 0px;
 	}
+
 
 	#imageGallery {
 		padding-left: 0px;

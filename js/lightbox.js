@@ -18,16 +18,21 @@ $overlay.append($image);
 //capture the click event on a link to an image
 $("#imageGallery a").click(function(event){
   event.preventDefault();
-  var imageLocation = $(this).attr("href");
-  // update overlay with the image linked -in the linked
-  $image.attr("src", imageLocation);
 
-  //show the overlay.
-  $overlay.show();
+  // check if we show the overlaw
+  if ($(window).width() > 595 ) {
+    var imageLocation = $(this).attr("href");
+    // update overlay with the image linked -in the linked
+    $image.attr("src", imageLocation);
+    $overlay.attr("style", "display:flex;")
 
-  // get child's alt atribute and set to caption
-  var captionText = $(this).children("img").attr("alt");
-  $caption.text(captionText);
+    //show the overlay.
+    $overlay.show();
+
+    // get child's alt atribute and set to caption
+    var captionText = $(this).children("img").attr("alt");
+    $caption.text(captionText);
+  }
 
 });
 
