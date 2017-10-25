@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ORCS Gallery</title>
+	<title>Ohio River Valley Cosplayers</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Eczar|IM+Fell+English|Quicksand" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -20,23 +20,30 @@
 		 	</a>
 			<ul class="menu">
 				<li><a href="index.html">About</a></li>
-				<li class="selected"><a href="gallery.html">Gallery</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="#">Events</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li class="selected"><a href="contact.html">Contact</a></li>
 			 </ul>
 		 </nav>
 	</header><!--/.main-header-->
-  <section class="light stage">
-		<h1 class="galleryTitle"> ORCS Gallery </h1>
-			<ul id="imageGallery">
-				<li><a href="gallery/image1.jpg"><img src="gallery/image1.jpg" width="100" alt="Cos Players"></a></li>
-				<li><a href="gallery/image2.jpg"><img src="gallery/image2.jpg" width="100" alt="Cos Players"></a></li>
-				<li><a href="gallery/image3.jpg"><img src="gallery/image3.jpg" width="100" alt="Cos Players"></a></li>
-				<li><a href="gallery/image4.jpg"><img src="gallery/image4.jpg" width="100" alt="Cos Players"></a></li>
-				<li><a href="gallery/image5.jpg"><img src="gallery/image5.jpg" width="100" alt="Cos Players"></a></li>
-				<li><a href="gallery/image6.jpg"><img src="gallery/image6.jpg" width="100" alt="Cos Players"></a></li>
-			</ul>
-  </section>
+
+
+	<!-- Question Form -->
+
+	<form class="questionsForm">
+		<h1>Got a question for us?</h1>
+		<label for="firstName">First Name</lable>
+			<input type="text" id="firstName" name="firstName">
+		<label for="lastName">Last Name</label>
+			<input type="text" id="lastName" name="lastName">
+		<label for="email">Email</label>
+			<input type="email" id="email" name="email">
+		<label for="subject">Subject</label>
+			<input type="text" id="subject" name="subject">
+		<label for="message">Message</label>
+			<input type="text" id="message" name="message">
+	</form>
+	
 
 	<footer class="main-footer">
 		<span>&copy;2017 Ohio River Valley Cosplayers.</span>
@@ -45,7 +52,6 @@
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
-	<script src="js/lightbox.js"></script>
 	</footer>
 
 </body>

@@ -6,6 +6,7 @@
 body {
   background: white;
   color: black;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .mLogo {
@@ -150,6 +151,8 @@ nav li:last-child {
 /***Gallery Page ***/
 .galleryTitle {
 	text-align: center;
+	font-family: 'IM Fell English', serif;
+	display: none;
 }
 #imageGallery li {
 	display: inline-flex;
@@ -185,7 +188,41 @@ nav li:last-child {
 	color: white;
 }
 
-/****Gallery Page *****/
+/**** End Gallery Page *****/
+
+/*** Contact Page ***/
+
+
+form {
+	float: left;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 8px;
+
+}
+
+input {
+	width: 100%;
+	margin: 0;
+	border-radius: 5px 5px;
+}
+
+
+
+
+
+
+
+
+
+/*** End Contact Page ***/
 
 
 
@@ -221,7 +258,7 @@ nav li:last-child {
   }
 
   .line {
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid #910d0d;
     width: 35px;
     margin-bottom: 6px;
   }
@@ -275,4 +312,8 @@ nav li:last-child {
 		height: auto;
 		max-width: 100%;
 		margin: 20px auto;
+	}
+
+	.galleryTitle {
+		display: block;
 	}
