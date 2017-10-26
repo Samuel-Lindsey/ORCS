@@ -14,6 +14,8 @@ body {
 }
 
 
+
+
 .headLogo {
   display: inline-flex;
   display: none;
@@ -75,6 +77,7 @@ header .menu {
   display: block;
   align: center;
   height: 50%;
+	margin-bottom: 20px;
 }
 
 .span1 img {
@@ -82,15 +85,13 @@ header .menu {
   height: 100%;
 }
 
-.logo {
-  width: 50%;
-  height: 50%;
-}
+
 
 
 
 .col {
   margin: 5px 10px;
+	font-size: 1.2rem;
 }
 
 .main-stage {
@@ -107,6 +108,7 @@ footer {
 	height: 20px;
 	position: sticky;
 	bottom: 0;
+	display: flex;
 }
 
 /***Menu Button - Nav ***/
@@ -149,6 +151,8 @@ nav li:last-child {
 }
 
 /***Gallery Page ***/
+
+
 .galleryTitle {
 	text-align: center;
 	font-family: 'IM Fell English', serif;
@@ -194,8 +198,10 @@ nav li:last-child {
 
 
 form {
-	float: left;
-  max-width: 800px;
+	display: block;
+
+	order: -1;
+  width: 80%;
   margin: 10px auto;
   padding: 10px 20px;
   background: #f4f7f8;
@@ -211,9 +217,31 @@ label {
 input {
 	width: 100%;
 	margin: 0;
+	font-size: 1.4rem;
 	border-radius: 5px 5px;
 }
 
+#message {
+	width: 100%;
+	margin:0;
+	border-radius: 5px 5px;
+	min-height: 100px;
+}
+
+.submitButton {
+	padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #910d0d;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #780000;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
 
 
 
@@ -232,6 +260,10 @@ input {
 
 .mLogo {
 	display: block;
+}
+
+.calLogo {
+	display: none;
 }
 
 .logo {
