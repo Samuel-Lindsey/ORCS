@@ -4,15 +4,22 @@
 }
 
 body {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
 	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 .mLogo {
 	display: none;
 }
 
+.wrapper {
+	flex: 1;
+	padding:20px;
+}
 
 
 
@@ -24,6 +31,9 @@ body {
 .selected a {
 	color: #910d0d;
 }
+ a {
+	 color: #910d0d;
+ }
 
 
 
@@ -51,7 +61,7 @@ header {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
-	background-color: white;
+	background-color: black;
 	margin-bottom: 5px;
 	position: sticky;
 	top: 0;
@@ -104,11 +114,10 @@ nav {
 }
 
 footer {
-	background-color: white;
+	background-color: black;
+	color: white;
 	height: 20px;
-	position: sticky;
-	bottom: 0;
-	display: flex;
+	padding: 20px;
 }
 
 /***Menu Button - Nav ***/
@@ -199,7 +208,7 @@ nav li:last-child {
 
 form {
 	display: block;
-
+	color: black;
 	order: -1;
   width: 80%;
   margin: 10px auto;
@@ -243,15 +252,12 @@ input {
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
 /*** End Contact Page ***/
 
+
+/*** Events Page ***
+	Seperate Css file
+*** End Events Page ***/
 
 
 
@@ -349,3 +355,8 @@ input {
 	.galleryTitle {
 		display: block;
 	}
+
+/**** Form Page ******/
+form {
+	width: 100%;
+}
