@@ -116,14 +116,16 @@ nav {
 footer {
 	background-color: black;
 	color: white;
-	height: 20px;
+	height: 30px;
 	padding: 20px;
 }
+
+
 
 /***Menu Button - Nav ***/
 
 ul li {
-margin-right: 5px;
+margin-right: 2px;
 
 }
 
