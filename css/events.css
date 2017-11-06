@@ -63,6 +63,7 @@ th.blockDate {
 }
 
 
+
 /*********************
 tr:nth-child(even) {
   background: #e8eeef;
@@ -85,9 +86,34 @@ tfoot td {
   color: #8a97a0;
 }
 
-.batmanEvent {
-  border: solid red;
+/******** Info toggle button *******/
+
+.eventInfo img {
+  margin-left: 20px;
+  cursor: pointer;
 }
+
+
+.eDetails h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #910d0d;
+}
+
+.details.data-hidden {
+  display:none;
+}
+
+.details {
+ margin-bottom: 5px;
+}
+
+
+
+
+/**********End info toggle button******/
+
+
 
 
 
@@ -96,4 +122,5 @@ tfoot td {
   table{
     width: 100%;
   }
+
 }
