@@ -1,5 +1,4 @@
-//Problem: User when clicking image goes to a dead end, poor UE.
-//Solution: create overlay with large image "lightbox"
+//create overlay with large image "lightbox"
 
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
@@ -22,7 +21,7 @@ $("#imageGallery a").click(function(event){
   // check if we show the overlaw
   if ($(window).width() > 595 ) {
     var imageLocation = $(this).attr("href");
-    // update overlay with the image linked -in the linked
+    // update overlay with the image linked -in the linked and flex behavior
     $image.attr("src", imageLocation);
     $overlay.attr("style", "display:flex;")
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ORCS Gallery</title>
+	<title>Events to Go</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/events.css"
@@ -12,7 +12,7 @@
 <body>
 
 	<header>
-			<nav>
+			<nav><!-- Begin Nav for mobile and desktop -->
 				<a href = "index.html"<h1 class="name">ORCS</h1></a>
 				<a href="#" class="hamburger">
 			 	<div class="line"></div>
@@ -25,9 +25,11 @@
 				<li class="selected"><a href="events.html">Events</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			 </ul>
-		 </nav>
+		 </nav><!-- /Nav -->
 	</header><!--/.main-header-->
 
+<!-- Div class "wrapper" for Sticky Footer TO WORK-->
+<!-- Event info in Data table-->
 	<div class="wrapper">
    <table>
       <caption>Upcoming Events</caption>
@@ -48,6 +50,7 @@
           <tr>
             <th scope="row" class="blockDate"> Oct </th>
             <td class="blockDate"> 31 </td>
+           <!-- Data-id is for Javascript to associate both <tr>s for dropdown details-->
             <td class="eventInfo" data-id="1"> Halloween Costume Party </td>
 					</tr>
 
@@ -59,12 +62,12 @@
           <tr>
             <th scope="row" class="blockDate"> Dec </th>
             <td class="blockDate"> 16 </td>
-            <td class="eventInfo" data-id="2"> Star Wars: The Last Jedi </td>
+            <td class="eventInfo" data-id="2"> Star Wars: The Last Jedi. </td>
           </tr>
 
 					<tr class="details data-hidden" data-id="2">
 						<td colspan="3" class="eDetails"> <h3>Location: Cinemark Mall St. Mathews</h3>
-						We are having a private screening </td>
+						We are having a private screening! </td>
           </tr>
 
           <tr>
@@ -75,7 +78,7 @@
 
 					<tr class="details data-hidden" data-id="3">
 						<td colspan="3" class="eDetails"> <h3>Location: ORCS @ 10pm</h3>
-						Bring in the New Year and win free drinks with games</td>
+						Bring in the New Year and win free drinks with games.</td>
           </tr>
 
           <tr>
@@ -91,9 +94,6 @@
       </tbody>
     </table>
 	</div>
-
-	<section class="l"
-
 
 	<footer class="main-footer">
 		<span>&copy;2017 Ohio River Valley Cosplayers.</span>

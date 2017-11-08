@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/********* Main Events Page styling *********/
 body {
   background-color: black;
   font-family: 'Quicksand', serif;
@@ -62,13 +63,6 @@ th.blockDate {
   border-bottom: 20px solid black;
 }
 
-
-
-/*********************
-tr:nth-child(even) {
-  background: #e8eeef;
-}
-**********************/
 th, td {
   text-align: left;
   padding: 10px;
@@ -85,6 +79,7 @@ tfoot td {
   font-style: italic;
   color: #8a97a0;
 }
+
 
 /******** Info toggle button *******/
 
@@ -111,9 +106,7 @@ tfoot td {
 /**********End info toggle button******/
 
 
-
-
-
+/*********Media Query**************/
 @media only screen and (max-width: 595px) {
 
   table{
